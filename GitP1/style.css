@@ -1,0 +1,58 @@
+.ultimateParent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.Card {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+img {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.Image {
+    width: 100%;
+}
+
+.FName {
+    font-weight: 700;
+    color: #0a0103;
+    font-size: 120%;
+}
+
+.Desgn {
+    font-weight: 400;
+    color: #544d4f;
+    font-size: 100%;
+}
+
+.Logo {
+    width: 40%;
+    padding-bottom: 10px;
+}
+
+/* Small Screen Size */
+@media screen and (max-width:767px) {
+    .ultimateParent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* Medium Screen Size */
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .ultimateParent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
