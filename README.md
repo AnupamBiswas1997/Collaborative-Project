@@ -1,2 +1,2 @@
 # GitAssignmentMasai
-A repository to store Masai's Git addignments
+A repository to store Masai's Git assignments
