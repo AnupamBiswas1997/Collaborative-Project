@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>collaborative project</title>
     <style>
+        body{
+            text-align: center;
+        }
          #parent{
             display: grid;
             grid-template-columns: repeat(4, 300px);
             grid-template-rows: repeat(3, 450px );
-            gap: 15px;
+            column-gap: 20px;
+            row-gap: 50px;
         }
         .child{
+            margin-top: 10px;
             position: relative;
             left: 100px;
             border-radius: 10px;
@@ -43,9 +48,52 @@
             font-size: 20px;
             color: rgb(160, 157, 157);
         } 
+        @media screen and (min-width:400px) and ( max-width:767px){
+            body{
+                text-align: center;
+                margin: auto;
+            }
+            #parent{
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(2, 450px );
+            gap: 20px;
+            }
+        }
+        @media screen and (min-width:150px) and ( max-width:399px){
+            body{
+                text-align: center;
+            }
+            h1{
+                font-size: 15px;
+            }
+            #parent{
+            display: grid;
+            grid-template-columns: repeat(1, 200px);
+            grid-template-rows: repeat(1, 350px );
+            gap: 20px;
+            }
+            img{
+                height: 200px;
+                width:200px ;
+                margin-top: 1px;
+                margin-bottom: 0px;
+            
+            }
+            .child{
+                position: relative;
+                left: 20px;
+                border-radius: 10px;
+                text-align: center;
+                margin: auto;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+
+        }
     </style>
 </head>
 <body>
+    <h1> MASAI INVESTERS</h1>
     <div id="parent">
         <div class="child">
             <div><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="invester-img"></div>
